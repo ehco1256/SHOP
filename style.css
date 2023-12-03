@@ -1,0 +1,210 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  text-align: center;
+}
+
+.word {
+  color: black;
+  font-weight: bolder;
+}
+
+header {
+  background: #fff;
+  height: 8.75rem;
+  position: relative;
+  z-index: 90
+}
+
+footer {
+  color: rgb(237, 237, 237);
+  background-color: #212121;
+  width: 100%;
+  height: auto;
+}
+
+footer img {
+  margin: 10px;
+  width: 18%;
+}
+
+.foot {
+  margin-top: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  display: grid;
+}
+
+
+.footcard {
+  line-height: 30px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 6.75rem;
+}
+
+.title {
+  position: center;
+  height: 2rem;
+  font-size: 14pt;
+}
+
+.logo-center {
+  position: relative;
+  left: 30%;
+  right: 30%;
+  width: 40%;
+  top: 10%;
+}
+
+.logo-center img {
+  width: 60%;
+  top: 10%;
+}
+
+.menu {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.menu * {
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.menu li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1.5em;
+  overflow: hidden;
+}
+
+.menu a {
+  padding: 0.3em 0;
+  color: #212121;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.menu a:before,
+.menu a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.menu a:before {
+  bottom: 100%;
+  display: block;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-color: #e67e22;
+}
+
+.menu a:after {
+  padding: 0.3em 0;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  content: attr(data-hover);
+  color: #212121;
+  white-space: nowrap;
+}
+
+.menu li:hover a,
+.menu .current a {
+  transform: translateY(100%);
+}
+
+.v {
+  position: relative;
+}
+
+.start {
+  position: absolute;
+  top: 80%;
+  /* 文字垂直居中 */
+  left: 50%;
+  /* 文字水平居中 */
+  transform: translate(-50%, -50%);
+  /* 将文字定位到视频中心 */
+  color: white;
+  /* 文字颜色 */
+  font-size: 18px;
+  /* 文字大小 */
+  font-weight: bold;
+  /* 字体粗细 */
+}
+
+
+
+.product {
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  display: grid;
+  margin: 40px auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.card {
+  font-size: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card:hover img,
+.model :hover img {
+  transform: scale(1.05);
+}
+
+.card img {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  padding-bottom: 10px;
+  width: 60%;
+  height: auto;
+}
+
+.model {
+  font-size: 13pt;
+  color: black;
+  text-align: center;
+  position: relative;
+  background-color: rgb(202, 201, 201);
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  margin-bottom: 3%;
+}
+
+.model a {
+  color: black;
+}
+
+.model img {
+  margin: 10% 10% 5% 10%;
+  width: 80%;
+  height: auto;
+}
+
+.model_card {
+  margin-bottom: 5%;
+}
